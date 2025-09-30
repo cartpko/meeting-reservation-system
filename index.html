@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面会予約フォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>面会予約フォーム</h1>
+            <p>ご希望の面会予約を承ります</p>
+        </div>
+
+        <form id="reservationForm">
+            <div class="form-group">
+                <label for="resident">入居者名 <span class="required">*</span></label>
+                <input type="text" id="resident" name="resident" required>
+            </div>
+            <div class="form-group">
+                <label for="visitor">面会者名 <span class="required">*</span></label>
+                <input type="text" id="visitor" name="visitor" required>
+            </div>
+            <div class="form-group">
+                <label for="date">希望日 <span class="required">*</span></label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">希望時間 <span class="required">*</span></label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">電話番号 <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{2,4}-[0-9]{2,4}-[0-9]{3,4}" placeholder="例: 090-1234-5678" required>
+                <small>ハイフンを入れてご入力ください</small>
+            </div>
+            <div class="form-group">
+                <label for="note">備考</label>
+                <textarea id="note" name="note" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="userId">ユーザーID (任意)</label>
+                <input type="text" id="userId" name="userId">
+            </div>
+
+            <button type="submit" class="btn-submit">予約を送信</button>
+        </form>
+
+        <div id="responseMessage" class="message" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
