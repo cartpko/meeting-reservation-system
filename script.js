@@ -1,5 +1,5 @@
 // GAS WebアプリのURL（デプロイ後に設定）
-const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzcTF7kJ4v65U2zPeuCg1tncOpwZ4RDxNF269-lDblT0JlKdK4UDhy8DVsGW-EKMZSIhg/exec';
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwbmRGvTblg6dvosIaMaW0HiQR0zBeB0DmTBKLiYm_x8eFnYidFHEiaJGLMAmqhpwyHag/exec';
 
 document.addEventListener('DOMContentLoaded', function() {
     // 今日以降の日付のみ選択可能
